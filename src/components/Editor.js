@@ -119,7 +119,7 @@ const Editor = ({ history }) => {
           onChange={onChange}
           value={state.creator}
           placeholder="Your name"
-          className={classnames("editor-title", {
+          className={classnames("editor-creator", {
             "is-invalid": errors.creator,
           })}
         />
