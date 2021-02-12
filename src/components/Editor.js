@@ -76,8 +76,8 @@ const Editor = ({ history }) => {
           class: ImageTool,
           config: {
             endpoints: {
-              byFile: "http://localhost:4000/upload/byFile", // Your backend file uploader endpoint
-              byUrl: "http://localhost:4000/upload/byUrl", // Your endpoint that provides uploading by Url
+              byFile: "https://article-file-upload.herokuapp.com/upload/byFile", // Your backend file uploader endpoint
+              byUrl: "https://article-file-upload.herokuapp.com/upload/byUrl", // Your endpoint that provides uploading by Url
             },
           },
         },
