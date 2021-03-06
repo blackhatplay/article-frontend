@@ -99,6 +99,8 @@ const Editor = ({ history }) => {
         // ...
       },
     });
+
+    server.get("/").then((res) => console.log(res.data));
   }, []);
   return (
     <div className="container">
