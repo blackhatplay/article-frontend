@@ -6,7 +6,7 @@ import Marker from "@editorjs/marker";
 import ImageTool from "@editorjs/image";
 import InlineCode from "@editorjs/inline-code";
 import Quote from "@editorjs/quote";
-import server from "../api/server";
+import server, { serverURL } from "../api/server";
 import classnames from "classnames";
 
 const Editor = ({ history }) => {
@@ -76,8 +76,8 @@ const Editor = ({ history }) => {
           class: ImageTool,
           config: {
             endpoints: {
-              byFile: "https://article-file-upload.herokuapp.com/upload/byFile", // Your backend file uploader endpoint
-              byUrl: "https://article-file-upload.herokuapp.com/upload/byUrl", // Your endpoint that provides uploading by Url
+              byFile: `${serverURL}/upload/byFile`, // Your backend file uploader endpoint
+              byUrl: `${serverURL}/upload/byUrl`, // Your endpoint that provides uploading by Url
             },
           },
         },
